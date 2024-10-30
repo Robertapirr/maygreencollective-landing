@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May Green Collective</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Logo Centrado -->
+    <header class="logo-centered">
+        <div class="logo">
+            <img src="./img/Green May copia-07.svg" alt="May Green Collective Logo">
+        </div>
+    </header>
+
+    <!-- Encabezado Principal con Bienvenida -->
+    <section id="home">
+        <h1>Bienvenidos a May Green Collective</h1>
+        <p class="welcome-text">
+            ¡Estamos preparando un espacio único en el corazón de Santa Cruz de Tenerife, donde moda, diseño y sostenibilidad convergen! Nos emociona abrir las puertas de nuestro <strong>concept store</strong> dedicado a productos locales y éticos, cuidadosamente seleccionados para promover un estilo de vida consciente y respetuoso con el entorno.
+            <br><br>
+            Para ofrecerte una experiencia completa y adaptada a tus intereses, te invitamos a rellenar el formulario de suscripción. Queremos conocerte mejor y saber qué actividades, eventos y talleres te gustaría ver en nuestro espacio. ¡Únete a nosotros y forma parte de este viaje hacia un estilo de vida sostenible y conectado con nuestras raíces!
+        </p>
+    </section>
+
+    <!-- Sección de Formulario de Registro -->
+    <section id="subscription-form">
+        <h3>Suscríbete y forma parte de nuestra comunidad</h3>
+        <form id="collectiveForm">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-zÀ-ÿ\s]+" title="El nombre solo puede contener letras y espacios" required>
+
+            <label for="phone">Teléfono (Móvil Español):</label>
+            <input type="tel" id="phone" name="phone" pattern="^(6|7)[0-9]{8}$" title="Debe ser un número móvil español válido de 9 dígitos" required>
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" min="10" max="99" maxlength="2" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="preferences">Preferencias de Talleres:</label>
+            <select id="preferences" name="preferences" multiple required>
+                <option value="arte">Arte</option>
+                <option value="arte">Moda</option>
+                <option value="gastronomia">Gastronomía</option>
+                <option value="vida_sostenible">Vida Sostenible</option>
+            </select>
+
+            <label for="availability">Disponibilidad:</label>
+            <select id="availability" name="availability" required>
+                <option value="morning">Mañana</option>
+                <option value="afternoon">Tarde</option>
+                <option value="weekend">Fin de Semana</option>
+            </select>
+
+            <button type="submit">Suscríbete y Forma Parte</button>
+        </form>
+    </section>
+
+    <!-- Footer con contacto -->
+    <footer id="contact">
+        <p>Contacta con nosotros: info@maygreencollective.com | Teléfono: +34 123 456 789</p>
+        <p>Síguenos en Instagram para más actualizaciones</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
